@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Jost', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/app/fonts/Jost100Hairline.otf') format('opentype');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/app/fonts/Jost200Thin.otf') format('opentype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/app/fonts/Jost300Light.otf') format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/app/fonts/Jost400Book.otf') format('opentype');
+  font-weight: 400;
+}
+
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/app/fonts/Jost500Medium.otf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/app/fonts/Jost600Semi.otf') format('opentype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/app/fonts/Jost700Bold.otf') format('opentype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/app/fonts/Jost800Heavy.otf') format('opentype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/app/fonts/Jost900Black.otf') format('opentype');
+  font-weight: 900;
+}
+
+.swiper-scrollbar {
+  background-color: #e5e7eb;
+  height: 8px !important;
+}
+
+.swiper-scrollbar-drag {
+  background-color: #1f2937;
+  border-radius: 4px;
+}
