@@ -45,7 +45,7 @@ const Slider: React.FC = () => {
         1024: { slidesPerView: 3 },
       }}
     >
-      {products?.map((product: any) => (
+      {products?.map((product: Product) => (
         <SwiperSlide key={product.id}>
           <Card product={product} />
         </SwiperSlide>
